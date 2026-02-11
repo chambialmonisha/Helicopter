@@ -1,0 +1,11 @@
+Model Information:
+* title:	burger
+* source:	https://sketchfab.com/3d-models/burger-1098832b6ed140cf887ca2d37230cf36
+* author:	Myrtille (https://sketchfab.com/myrt1lle)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "burger" (https://sketchfab.com/3d-models/burger-1098832b6ed140cf887ca2d37230cf36) by Myrtille (https://sketchfab.com/myrt1lle) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
