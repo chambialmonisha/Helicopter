@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AR Menu Card</title>
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+  <!-- A-Frame (Stable) -->
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+
+  <!-- AR.js (Stable & Compatible) -->
+  <script src="https://raw.githack.com/AR-js-org/AR.js/3.3.2/aframe/build/aframe-ar.js"></script>
+
+  <!-- Gesture Support -->
+  <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- AR Scene -->
+  <a-scene
+    embedded
+    vr-mode-ui="enabled: false"
+    arjs="sourceType: webcam; debugUIEnabled: false;"
+    gesture-detector>
+
+    <!-- Assets -->
+    <a-assets>
+      <!-- Replace path with your model -->
+      <a-asset-item
+        id="pizza-model"
+        src="./assets/army_helicopter/scene.gltf">
+      </a-asset-item>
+    </a-assets>
+
+    <!-- Marker -->
+    <a-marker
+      id="pizza-marker"
+      type="pattern"
+      url="./assets/marker/pattern-istockphoto-1210217040-612x612.patt">
+
+      <!-- 3D Model -->
+      <a-entity
+        gltf-model="#pizza-model"
+        position="0 0 0"
+        scale="0.05 0.05 0.05"
+        rotation="0 0 0"
+        gesture-handler>
+      </a-entity>
+
+    </a-marker>
+
+    <!-- Camera -->
+    <a-entity camera cursor="rayOrigin: mouse"></a-entity>
+
+  </a-scene>
+
+</body>
+</html>
